@@ -19,19 +19,20 @@
         display: block;
     }
 
-    .secao-horizontal .cartao__imagem {
-        height: 4.58rem;
-    }
+    .secao-horizontal .cartao {
+        &__imagem {
+            height: 4.58rem;
+        }
 
-    .secao-horizontal .cartao__titulo {
-        font: 700 14px/20px Open Sans, sans-serif;
+        &__titulo {
+            font: 700 14px/20px Open Sans, sans-serif;
+        }
     }
 
     .secao-vertical .cartao {
         background-color: transparent;
         padding: 0;
     }
-
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1399px) {
@@ -50,23 +51,24 @@
         display: none;
     }
 
-    .secao-horizontal .cartao__imagem {
-        height: 73px;
-    }
+    .secao-horizontal .cartao {
+        &__imagem {
+            height: 73px;
+        }
 
-    .secao-horizontal .cartao__titulo {
-        font: 700 16px/22px 'Open Sans', sans-serif;
-    }
+        &__titulo {
+            font: 700 16px/22px 'Open Sans', sans-serif;
+        }
 
-    .secao-horizontal .cartao__subtitulo {
-        font: 400 14px/19px 'Open Sans', sans-serif;
-        width: 100%;
+        &__subtitulo {
+            font: 400 14px/19px 'Open Sans', sans-serif;
+            width: 100%;
+        }
     }
 
     .secao-vertical .cartao {
         padding: 1.25rem;
     }
-
 }
 
 @media only screen and (min-width: 1400px) {
@@ -75,5 +77,4 @@
     .cabecalho__logo {
         display: none;
     }
-
 }
