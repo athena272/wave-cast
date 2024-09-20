@@ -96,56 +96,61 @@ main {
 
 /*Main*/
 /*Estilos compartilhados pelos elementos presentes na seção horizontal e elementos da seção vertical*/
-.secao__titulo {
-    font-weight: 700;
-    font-size: 1.25rem;
-    user-select: none;
+.secao {
+    &__titulo {
+        font-weight: 700;
+        font-size: 1.25rem;
+        user-select: none;
+    }
 }
 
 .cartao {
     background: var(--cinza);
     border-radius: .5rem;
-}
 
-.cartao__titulo {
-    font-weight: 700;
-    line-height: 1.35rem;
+    &__titulo {
+        font-weight: 700;
+        line-height: 1.35rem;
+    }
 }
 
 /*Seção horizontal*/
+.secao-horizontal {
+    .cartao {
+        overflow: hidden;
 
-.secao-horizontal .cartao {
-    overflow: hidden;
-}
+        &__imagem {
+            height: 4.58rem;
+        }
 
-.secao-horizontal .cartao__imagem {
-    height: 4.58rem;
-}
+        &__player {
+            width: 10.25rem;
+            height: 0.25rem;
+            background: white;
+            border-radius: .5rem;
+        }
 
-.secao-horizontal .cartao__player {
-    width: 10.25rem;
-    height: 0.25rem;
-    background: white;
-    border-radius: .5rem;
-}
-
-.secao-horizontal .cartao__botao {
-    padding-right: .75rem;
+        &__botao {
+            padding-right: .75rem;
+        }
+    }
 }
 
 /*Seção vertical*/
-.secao-vertical .cartao {
-    padding: 1rem;
-}
+.secao-vertical {
+    .cartao {
+        padding: 1rem;
 
-.secao-vertical .cartao__imagem {
-    height: 9.75rem;
-    margin-bottom: .5rem;
-    object-fit: contain;
-}
+        &__imagem {
+            height: 9.75rem;
+            margin-bottom: .5rem;
+            object-fit: contain;
+        }
 
-.secao-vertical .cartao__subtitulo {
-    margin-top: .75rem;
+        &__subtitulo {
+            margin-top: .75rem;
+        }
+    }
 }
 
 .secao__cartoes::-webkit-scrollbar {
@@ -172,18 +177,18 @@ main {
     position: fixed;
     bottom: 0;
     width: 100vw;
-}
 
-.navbar__items {
-    width: 80%;
-    margin: .5rem auto;
-}
+    &__items {
+        width: 80%;
+        margin: .5rem auto;
+    }
 
-.navbar__item {
-    font-size: .75rem;
-}
+    &__item {
+        font-size: .75rem;
 
-.navbar__item::before {
-    display: block;
-    margin-bottom: .25rem;
+        &::before {
+            display: block;
+            margin-bottom: .25rem;
+        }
+    }
 }
