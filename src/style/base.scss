@@ -67,6 +67,17 @@ main {
         letter-spacing: 0.1rem;
         margin-bottom: .5rem;
         white-space: nowrap;
+
+        button {
+            img {
+                padding: 0 .5rem;
+            }
+        }
+    }
+
+    &__playlist {
+        padding-left: 1rem;
+        user-select: none;
     }
 }
 
@@ -74,26 +85,16 @@ main {
     color: var(--azul-neon);
 }
 
-.menu-lateral__link button img {
-    padding: 0 .5rem;
-}
-
-.menu-lateral__playlist {
-    padding-left: 1rem;
-    user-select: none;
-}
-
 /*Header*/
 .cabecalho {
     padding-top: 2.5rem;
-}
 
-.cabecalho__botao:not(:last-of-type) {
-    margin-right: 1rem;
+    &__botao:not(:last-of-type) {
+        margin-right: 1rem;
+    }
 }
 
 /*Main*/
-
 /*Estilos compartilhados pelos elementos presentes na seção horizontal e elementos da seção vertical*/
 .secao__titulo {
     font-weight: 700;
