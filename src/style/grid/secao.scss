@@ -8,3 +8,7 @@
 .secao-vertical {
     grid-template-rows: 70px auto;
 }
+
+.secao-horizontal .secao__cartoes {
+    display: grid;
+}
